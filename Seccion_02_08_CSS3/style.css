@@ -1,0 +1,65 @@
+header h2, h3{
+    color: green;
+}
+
+p {
+    color: royalblue;
+}
+
+/*elemento + ID*/
+p #azul {
+    color:orangered;
+}
+
+/*CLASS*/
+.prueba {
+    color: aquamarine;
+}
+
+/*CLASS*/
+.grande {
+    font-size: 18px;
+}
+
+/*p+p Todos los elementos (adyacente), en este caso parrafos, que sean continuos y que no sean separador por otro elemento */
+p+p #p_id {
+    font-weight: bolder;
+}
+
+/*Todo parrafo que sea hijo de un DIV*/
+div > p {
+    color: chocolate;
+}
+
+/*elementos hermanos*/
+p ~ p {
+    color:darkorchid;
+}
+
+/*Solo los elementos que tengan ese atributo*/
+h2 [title] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Solo los elementos que tengan ese atributo y valor*/
+h2 [title~="cabecera"] {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3 [lang |= "es"] {
+    color: gold;
+}
+
+/*
+    1. CSS del navegador
+    2. CSS del usuario
+    3. Archivos CSS enlazados en el orden añadido
+    4. Propiedades que heredan sus atributos
+        Ej.: un DIV que contenga otro elementos de etiquetas
+    5. Propiedades del elemento
+    6. Clases en el orden de asiganción "."
+    7. El identificador "#"
+    8. Asiganción del estilo en la pagina HTML
+    9. !important
+        Ej.: color: red; !important
+*/

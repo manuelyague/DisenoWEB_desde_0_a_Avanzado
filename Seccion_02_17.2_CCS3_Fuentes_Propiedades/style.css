@@ -1,0 +1,65 @@
+/*Los valores para font-weight pueden ser:
+    - 100
+    - 200
+    - 300
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - normal
+    - lighter
+    - bold
+    - bolder
+
+Las palabras reservadas tiene su equivalencia:
+    - normal    = 400
+    - bold      = 700
+    - bolder    = 900
+    - lighter   = 100
+
+Los valores para fornt-style pueser ser:
+    - normal
+    - italic / oblique
+        Ej: fornt-style: oblique;
+
+Los valores para text-align:
+    - left
+    - right
+    - center
+    - jusfity
+
+line-height, establece la altura de una casilla remarcada por líneas.
+    p{line-height: 3.5;}
+
+Los valores para text-decorarion
+    - normal / none
+    - underline
+    - overline / line-through
+
+Los valores de text-transformation:
+    - capitalize
+    - uppercase     -> mayuscula
+    - lowercase     -> minuscula
+
+font-variant el valor small-caps, deja todo con letra imprenta, y las mayusculas, con mayor tamaño
+    font-variant: small-caps;
+
+text-indent, indenta el texto (NO usar espacios)
+    text-indent: 14px; 
+
+letter-spacing, el espacio que abra entre las letras
+    letter-spacing: -1px;
+
+word-spacing, espacio entre palabras
+    word-spacing: 5px;
+
+Seudoelementos:
+
+:first-letter, la primera letra del text, se le da distintas caracteristicas
+    p.texto:first-letter{font-size: 30px}
+
+:first-line, caracteristicas especiales para toda la linea
+    p.texto:first-line{font-size: 30px}
+*/
+

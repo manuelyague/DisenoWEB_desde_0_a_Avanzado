@@ -1,0 +1,22 @@
+/*
+    in: (inches / pulgadas) --> 1in = 2,54 cm
+    cm: centimetros
+    pt: puntos --> 1pt = 0,35mm
+    pc: picas --> 1pc = 12pt = 4,23
+*/
+
+p.in{
+    font-size: 0.5in; /*--> .5in*/
+}
+
+p.cm{
+    font-size: 1cm;
+}
+
+p.mm{
+    font-size: 15mm;
+}
+
+p.pt{
+    font-size: 2pt;
+}

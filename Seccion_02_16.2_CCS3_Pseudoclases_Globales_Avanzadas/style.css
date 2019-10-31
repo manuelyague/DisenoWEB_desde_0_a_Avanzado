@@ -1,0 +1,44 @@
+div *{
+    border: 1px solid black;
+    width: 80px;
+    height: 50px;
+    background: white;
+    display: inline-block;
+}
+
+/*Se cambia el tercer elemento del div*/
+div *:nth-child(3){
+    background: orangered;
+}
+
+div p:nth-of-type(4){
+    background: orangered;
+}
+
+div article:not(.clase){
+    background: goldenrod;
+}
+/*Con esto, no es necesario poner un ID para cada elemente, sino, con CSS indicamos que elemento posicionado en X lugar, va a tener cierta caracteristicas*/
+
+/*
+:nth-child(N) -> El hijo numero N
+:nth-last-child(N) -> el hijo N contando del final
+
+:nth-of-type(N) -> se refiere al tipo de elemento
+:nth-last-of-type(N) -> el elemento N contando desde el final
+
+:first-of-type  -> el primero de ese tipo de elemento
+:last-of-type   -> el ultimo de ese tipo de elemento
+:only-of-type   -> solo ese tipo si es el unico elemento que existe
+:empty          -> si el elemento esta completamente vacio
+:not(S)         -> que no sea del selector indicado en (S)
+
+:last-child     -> el primer hijo
+:only-child     -> el ultimo hijo
+:root           -> el elemento raíz
+:enable         -> elementos activados
+:disable        -> elementos desactivados
+:checked        -> RadioButton que esten activados
+
+even / odd      -> pares e impares
+*/

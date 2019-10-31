@@ -1,0 +1,41 @@
+.dad{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: orange;
+    border: 1px solid orangered;
+}
+
+.son1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: inline-block;
+    /*Posicion adelante o atras de un objeto*/
+    z-index: 99;/*-99*/
+    position: relative;
+}
+
+.son2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+}
+
+.dad1{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: orange;
+    border: 1px solid orangered;
+    overflow: hidden; /*Todo lo que salga del padre no se vea.*/
+}
+
+.oculto{
+    visibility: hidden; /*Oculta el elemento, pero aun asi, conserva el espacio*/
+}
+
+.transparencia{
+    opacity: 0.5;
+}

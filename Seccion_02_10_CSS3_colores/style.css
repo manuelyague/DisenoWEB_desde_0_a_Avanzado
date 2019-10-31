@@ -1,0 +1,42 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px;
+    margin: 20px;
+}
+
+/*palabras reservadas*/
+.reservadas{
+    background: indianred;
+    border: solid crimson;
+}
+
+.luzRGB{
+    /*RGB --> 0 -> 255 */
+    background: rgb(204, 204, 30);
+    border: solid darkorange;
+}
+
+.hex{
+    background: #643005;
+    border: solid #800000;
+}
+
+/* Es lo mismo que la clase .luzRGB, pero con porcentaje*/
+.porcentual{
+    background: rgb(50%,20%,75%);
+}
+
+.hsl{
+    background: hsl(240,100%,50%);
+}
+
+/*Colores con transparencia*/
+
+.rgbt{
+    background: rgba(127,51,191,0.5);
+}
+
+.hslt{
+    background: hsla(127,50%,20%,0.8);
+}

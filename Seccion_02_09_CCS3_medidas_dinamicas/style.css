@@ -1,0 +1,28 @@
+body {
+    font-size: 16px;
+    /*font-size: .4px; --> es lo mismo que 0.4px
+    un px depende de la pantalla
+    */
+}
+
+p.em{
+    font-size: 2em;
+    /*el em aumenta el valor por defecto (heredado), 
+    toma los 16px del body y los combierte en 32px
+    */
+}
+
+div p{
+    font-size: 2em;
+    /*ek em lo multiplica con lo que hereda*/
+}
+
+div p.rem{
+    font-size: 1rem;
+    /*r=root, el rem no impporta lo que se herede */
+}
+
+p.ex{
+    font-size: 1ex;
+    
+}

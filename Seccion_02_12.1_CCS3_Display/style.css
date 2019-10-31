@@ -1,0 +1,20 @@
+p.dipley_inline_block{
+    border: 1px solid orangered;
+    background: orange;
+
+    display: inline-block;/*Los elementos se ponen uno o al lado del otro segun expanda la pantalla*/
+    /*con inline-block, tiene que haber espacio para el elemento completo*/
+}
+
+p.display_inline{
+    border: 1px solid orangered;
+    background: orange;
+
+    display: inline;
+    /*con inline, se comportan como una sola linea, margin lo toma como un solo elemento*/
+}
+
+p#ghost{
+    /*Elementos que quiero que desaparescan en la pagina*/
+    display: none;
+}

@@ -1,0 +1,18 @@
+/*Los pseudoclase, es el estado que se encuentra cierto elemento*/
+
+a#link1:link{
+    color: rgb(172, 112, 0);
+}
+
+a#link1:visited{
+    color: orangered;
+}
+
+
+/*Todos el resto de elemtos de <a> se cambian en el elemento, por ejemplo,
+quitar el subrayado*/
+
+a{
+    text-decoration: none;
+}
+

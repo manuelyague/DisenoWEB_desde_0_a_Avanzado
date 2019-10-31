@@ -1,0 +1,26 @@
+/*No todos los navegadores aceptan el mismo formato de fuentes
+que son :
+- eot
+- svg
+- ttf
+- woff 
+
+Por lo tanto, deben estar cargadas todas las alternativas*/
+
+@font-face{
+    font-family: "irlandesa";
+    src:url("font/irlandesa.eot");
+    src:local('?'), 
+        url("font/irlandesa.woff") format("woff"),
+        url("font/irlandesa.ttf") format("truetype");
+}
+
+p{
+    font-family: "irlandesa", Arial;
+}
+
+/*Fuentes online: https://fonts.google.com*/
+
+span{
+   font-family: 'Fira Code', monospace;
+}

@@ -1,0 +1,67 @@
+.dad{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: orange;
+    border: 1px solid orangered;
+}
+
+/*.dad > div {
+    display: inline-block;
+    vertical-align: botton
+}*/
+
+/*position, el lugar de la pagina donde se mostrara el elemento*/
+
+.son1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: static; 
+    /* static no considera ni top, left ni nada*/
+    top: 30px;
+    left: 150px;
+}
+
+.son2{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: relative;
+    top: -30px; /*con "-" se posiciona sobre el elemento*/
+    left: 150px;
+}
+
+.son3{
+    width: 50px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    top: 0px; /*tomara las coordenadas del superior que no sea absolute*/
+}
+
+.son4{
+    width: 50px;
+    height: 50px;
+    background: olive;
+    position: fixed; /*Coordenadas respecto al body, se fija y no se mueve*/
+}
+
+
+/*diferencia con absolute*/
+.dad_1{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: orange;
+    border: 1px solid orangered;
+    position: relative;
+}
+
+.son3_1{
+    width: 50px;
+    height: 50px;
+    background: green;
+    position: absolute;
+    top: 0px; /*tomara las coordenadas del superior que no sea absolute*/
+}

@@ -1,0 +1,28 @@
+div{
+    width: 50px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+div.dimension{
+    /*Margen en el sentido de las manillas del reglos 
+    (desde la derecha frente al PC)*/
+    margin: 20px 50px 100px 3px;
+    /*Margen abajo*/
+    margin-bottom: 60px;
+    /*margen derecha*/
+    margin-right: 20px;
+    /*Margen izquierda*/
+    margin-left: 20px;
+    /*Margen arriba*/
+    margin-top: 20px;
+
+    /*Cuidado al usarlos en paginas responsivas*/
+    padding: 5px;
+    padding: 10px 20px;
+    padding: 30px 30px 5% 5%;
+}
+
+p{
+    border: 1px solid orangered;
+}

@@ -1,0 +1,16 @@
+/*El hover se puede asignar a todos los elementos por donde pase el mouse*/
+p:hover{
+    color: orangered;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*Las caracteristicas del elemento cambia al realizar click con el mouse*/
+span:active{
+    color: green;
+}
+
+input:focus{
+    border-radius: 5px;
+    background: rgb(216, 233, 183);
+}
