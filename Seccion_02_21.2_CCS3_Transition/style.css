@@ -1,0 +1,30 @@
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid orangered;
+    background: orange;
+    margin: 50px;
+    /*transition: all 4s linear*/
+    transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+
+    transition-delay: 3s; /*-> lo que demora en aparecer una transicion*/
+
+    /*
+    transition-timing-function:
+        ease
+        ease-in         -> lento al principio
+        ease-out        -> lento al final
+        ease-in-out
+        linear
+    */
+}
+
+.transicion:hover{
+    /*transform: rotate(90deg) skew(20deg);*/
+    transform: rotate(90deg);
+    background: green;
+}
+
+

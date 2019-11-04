@@ -1,26 +1,48 @@
-/*No todos los navegadores aceptan el mismo formato de fuentes
-que son :
-- eot
-- svg
-- ttf
-- woff 
+/*
+La estructura de las sombras aplicadas a cajas (box-shadow) o 
+al texto (text-shadow) tienen 4 valores:
+    - Desplazamiento horizontal
+    - Desplazamiento Vertical
+    - Difuminado
+    - Color
 
-Por lo tanto, deben estar cargadas todas las alternativas*/
+Añadiendo el valor "inset" como primer valor del conjunto box-shadow
+seguido de la estructura comun, establecemos la sombra de forma interna
+en el elemento al que se la queremos asignar.
+*/
 
-@font-face{
-    font-family: "irlandesa";
-    src:url("font/irlandesa.eot");
-    src:local('?'), 
-        url("font/irlandesa.woff") format("woff"),
-        url("font/irlandesa.ttf") format("truetype");
+div{
+    height: 200;
+    width: 200px;
+    background: orange;
+    border: 2px solid orangered;
+    margin: 50px;
+    text-align: center;
 }
 
 p{
-    font-family: "irlandesa", Arial;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
 }
 
-/*Fuentes online: https://fonts.google.com*/
+.sombradiv{
+    box-shadow: 10px 10px 0px red;
+    /*box-shadow: 10px -20px 5px red;*/
+    /*box-shadow: inset 10px -20px 5px red; 
+    inset la sombra es hacia adentro*/
+}
 
-span{
-   font-family: 'Fira Code', monospace;
+.sombradiv2{
+    box-shadow: inset 10px -20px 5px red;
+}
+
+.sombrap{
+    text-shadow: 10px 10px 0px red;
+}
+
+/*Combinar varias sombras*/
+.variassombrasdiv{
+    box-shadow: 10px 10px 0px red,
+                -10px -10px 5px greenyellow;
 }

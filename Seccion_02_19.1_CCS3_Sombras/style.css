@@ -1,0 +1,71 @@
+/*
+Los tres atributos fundamentales para establecer el borde de un elemento son:
+
+    - border-width: indica la anchura del borde
+    - border-style: indica el tipo del bode:
+        - solid
+        - dashed    - marco con linea segmentada
+        - double    -> marco doble con la distancia en el borde
+        - dotted    -> marco con puntos
+        - inset     -> el marco de un cuadro
+        - outset    -> igual que el inset pero con marco hacia afuera
+        - none
+    - border-color: color del bode
+
+    - border: anchura estilo color
+
+Asi se puede aplicar a un borde concreto con:
+
+    - border-top-style
+    - border-left-color
+
+    - border-radius: 20px
+    - border-top-left-radius: 30px 10px
+    Se puede establecer el radio de curbatura de las esquinas de forma 
+    distinta, dando el valor al eje X y al eje Y
+*/
+
+div{
+    height: 200px;
+    width: 200px;
+    background: orange;
+    border: 1px solid orangered;
+    margin: 50px;
+}
+
+.borde{
+    background: rgb(44, 44, 255);
+    /*border: 3px solid rgb(5, 5, 124); es lo mismo:*/
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(5, 5, 124);
+}
+
+.borde1{
+    background: rgb(238, 174, 35);
+    border-width: 8px;
+    border-style: inset;
+    border-color: rgb(8, 129, 34);
+}
+
+.borde2{
+    background: rgb(238, 174, 35);
+    border-width: 8px;
+    border-style: inset;
+    border-color: rgb(8, 129, 34);
+    border-top-color: aqua;
+}
+
+.radio{
+    border-radius: 20px;
+}
+
+.radio2{
+    border-radius: 20px;
+    border-top-left-radius: 50px;
+}
+
+.radio3{
+    border-radius: 20px;
+    border-top-left-radius: 30px 10px;
+}

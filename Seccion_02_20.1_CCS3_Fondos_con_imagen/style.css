@@ -1,0 +1,38 @@
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid orangered;
+    margin: 50px;
+}
+
+.fondo1{
+    background: url("imagen.png")
+}
+
+.fondo2{
+    background-repeat: no-repeat;
+}
+
+.fondo3{
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+}
+
+.fondo4{
+    height: 400px;
+    width: 400px;
+    margin: 50px;
+    background-position: border-box;
+}
+
+/*Marcas de agua sobre otra imagen. 
+Una imagen sobre otra*/
+
+.fondo5{
+    background: url("firma.jpg"),
+                url("imagen.png");
+
+    /*Para dar distintas caracteristicas, se debe poner en el mismo orden*/
+    background-repeat: no-repeat, repeat;
+                
+}

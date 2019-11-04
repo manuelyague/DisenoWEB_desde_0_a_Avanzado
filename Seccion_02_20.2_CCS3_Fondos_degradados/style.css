@@ -1,0 +1,19 @@
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid orangered;
+    margin: 50px;
+}
+
+.degradado{
+    /*background: -moz-radial-gradient(*/
+    background: -moz-linear-gradient(
+        left,
+        blue 0%,
+        red 30%,
+        green 80%,
+        yellow 100%);
+}
+
+
+

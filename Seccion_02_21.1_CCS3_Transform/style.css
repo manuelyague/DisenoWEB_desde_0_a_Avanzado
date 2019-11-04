@@ -1,0 +1,50 @@
+div{
+    height: 400px;
+    width: 400px;
+    background: orange;
+    border: 2px solid orangered;
+    margin: 50px;
+}
+
+.rotar{
+    transform: rotate(45deg);
+}
+
+/*toma como punto de rotación arriba izquierda*/
+.rotar_con_punto_de_rotacion{
+    transform-origin: top left;
+}
+
+.rotar_skew{
+    transform: skew(20deg, 5deg);
+}
+
+/*diferencia con position, es que translate no efecta con el flujo de 
+posicion de elementos de la pagina */
+.rotar_translate{
+    transform: translateX(30px);
+}
+
+.trans_scale{
+    transform: scale(1.2);
+    /*transform: scaleY(0.8);
+      transform: scale(1.2, 0.4);*/
+}
+
+/*
+transform: tipo(cantidad);
+transform: tipoX(cantidad);
+transform: tipoY(cantidad);
+transform: tipo(cantidadX, cantidadY);
+
+rotate
+skew
+translate
+scale
+
+transform tipo() tipo() ...;
+
+*/
+
+
+

@@ -1,0 +1,43 @@
+body{
+    background: orange;
+}
+
+div{
+    width: 80%;
+    height: 150px;
+    margin: 8%;
+    display: inline-block;/*<- pocision del elemento uno al lado del otro*/
+    background: white;
+}
+
+
+/*Pantalla de movil*/
+@media screen and (min-width: 480px){ /*<- min-width, comprueba la anchura del dispositivo*/
+    body{
+        background: #34A647;
+    }
+
+}
+
+/*Pantalla de tablet*/
+@media screen and (min-width: 767px){
+    body{
+        background: #34A2A6;
+    }
+    div{
+        width: 40%;
+        margin: 4%;
+    }
+}
+
+/*pantalla de escritorio*/
+@media screen and (min-width: 950px){
+    body{
+        background: #A76A9E;
+    }
+    div{
+        width: 28%;
+        margin: 2%;
+    }
+    
+}

@@ -1,0 +1,18 @@
+div{
+    border: 2px solid orangered;
+    width: 50%;
+    position: relative;
+    margin: 25%;
+}
+
+div::before{
+    content: 'Mensaje_content_before';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: orangered;
+}
+
+div:after{
+    content: 'Mensaje_content_after';
+}

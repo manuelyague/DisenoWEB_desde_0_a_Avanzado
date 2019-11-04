@@ -1,0 +1,38 @@
+div{
+    border: 2px solid orangered;
+    background: orange;
+    width: 50%;
+    position: relative;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.triangulo_lateral{
+    -moz-transform: translateX(0);
+    -moz-transition-duration: 0.3;
+    /*-webkit-transform: translateX(0);
+    -webkit-transition-duration: 0.3;*/
+}
+
+.triangulo_lateral:before{
+    content: '';
+    
+    /*Colicionando los bordes se crear el triangulo*/
+    border-style: solid;
+    border-width: 15px 15px 15px 0px; /*<-0 pixeles donde quiero que apunte*/
+    border-color: transparent orange transparent transparent ;
+
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.triangulo_lateral:hover:before{
+    left: -13px;
+}
