@@ -1,0 +1,26 @@
+div{
+    font-family: 'Arial';
+    border: 2px solid orangered;
+    background: orange;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*IMPORTANTE: Combinar correctamente los colores a destacar en el borde*/
+
+.resalte_borde{
+    box-shadow: inset 0 0 0 4 #ddd; /*el color del borde debe destacar*/  
+    /*Sin desplazamiento horizontal, vertical, sin difuminado, pero con grosor */
+    -moz-transition-duration: 0.3s;
+}
+
+.resalte_borde:hover{
+    box-shadow: inset 0 0 0 4 #555; /*el color del borde debe destacar*/  
+    /*Sin desplazamiento horizontal, vertical, sin difuminado, pero con grosor */
+
+}

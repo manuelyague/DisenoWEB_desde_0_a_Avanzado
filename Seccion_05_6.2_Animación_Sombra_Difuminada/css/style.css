@@ -1,0 +1,23 @@
+div{
+    font-family: 'Arial';
+    border: 2px solid orangered;
+    background: orange;
+    width: 80%;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sombra_difuminada{
+    box-shadow: 0px 0px 1px rgba(0,0,0,1);
+/*Desplazamiento Y   X   Difuminado  Color*/
+}
+
+.sombra_difuminada:hover{
+    -moz-text-decoration: 0.3s;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+}
